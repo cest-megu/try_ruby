@@ -12,6 +12,7 @@ while true
   print "プランの番号を選択 > "
   plan_num = gets.to_i
 break if (1..3).include?(plan_num)
+  puts "1~3の番号を入力してください。"
 end
 
 case plan_num
@@ -37,11 +38,11 @@ while true
   break if person_num >= 1
   puts "1以上を入力してください。"
 end
-  puts "#{person_num}名ですね。"
-  total_price = person_num*price
+puts "#{person_num}名ですね。"
+total_price = person_num*price
 
 if person_num >= 5
   puts "5名以上ですので10%割引となります。"
   total_price *= 0.9
 end
-  puts "合計料金は#{total_price.floor}円になります。"
+puts "合計料金は#{total_price.floor}円になります。"

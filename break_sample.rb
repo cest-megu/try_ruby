@@ -40,9 +40,9 @@ class Task
     @content = content
   end
 
-  # def content
-  #   @content
-  # end
+  def content
+    @content
+  end
 
   # def content=(content)
   #   @content = content
@@ -50,7 +50,7 @@ class Task
 end
 
 task = Task.new(:プログラミングの学習)
-
-p task
-
+puts task.content
 # binding.pry
+
+# task
